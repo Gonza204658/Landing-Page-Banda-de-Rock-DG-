@@ -1,0 +1,334 @@
+
+/*HERE WE APPLY STANDARDS TO EVERYTHING*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*HERE WE ADD AN IMAGE TO THE BACKGROUND OF THE PAGE*/
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url("imagenes/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#e2e8f0;
+}
+
+/*THIS IS THE ENTIRE HEADER*/
+header {
+    background-color: rgb(43, 42, 42);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(45px);
+}
+/*THAT'S PART OF THE HEADER*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*HERE WE ADJUST THE MENU, WHICH IS THE BAR, THE HEADER*/
+.menu{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    position: relative;        
+    padding: 20px;
+}
+
+/* WE ADJUSTED THE LOGO TO THE LEFT */
+.logo{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+/*WE ARRANGE THE IMAGE TO MAKE IT ROUND*/
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*WE'RE ADDING INTERACTIVITY, THIS MAKES IT ENLARGE WHEN YOU HOVER THE MOUSE*/
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+/* NAV */
+.navbar ul{
+    display: flex;
+    gap: 40px;
+}
+
+/* LINKS */
+.navbar ul li a{
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    padding:15px;
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+.logo img{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+
+
+/* NAV LINKS */
+
+.nav_links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav_links a{
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nav_links li:hover{
+    transform: scale(1.3);
+}
+
+.nav_links a:hover{
+    color:#a114bd;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 60px;
+    color: #c351da;
+}
+
+.title2 {
+    text-align: center;
+    margin: 40px;
+    color: rgb(250, 151, 229);
+}
+
+
+.chart_ho_are_they {
+    text-align: center;
+    color: #000000;
+}
+
+
+.text1{
+    color: #e2e8f0;
+    max-width: 62.5rem;
+    width: 100%;
+    height: 100%;
+    margin: 1.25rem auto;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
+/* CONTENT OF THE FIRST TEXT BOX */
+
+.text1{
+    width:85%;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding:40px;
+    border-radius:15px;
+}
+
+
+.text1 {
+    padding: 1rem;
+
+}
+
+
+/* WE ADJUSTED THE GROUP IMAGE*/
+
+
+.imag {
+    margin: 1.25rem auto;
+    max-width: 30.75rem;       
+    height: 100%;
+    text-align: center;
+    border-radius:15px;
+}
+
+
+
+/* TODO ESTO ES EL CONTENEDOR DE IMAGENES*/ 
+
+
+.image_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem;
+    max-width: 75rem;
+    margin: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 500px;    
+    height: 200px;     
+    object-fit: cover;
+    border-radius: 0.9375rem;  
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    
+}
+
+.card h2 {
+    margin-top: 0.625rem;
+    font-size: medium;
+    margin: 20px;
+}
+
+
+/*RELS*/
+
+.video {
+    text-align: center;
+    margin: 100px;
+}
+
+/*FROM*/
+
+.FOR {
+    max-width: 100%;
+    border-radius: 0;
+}
+
+.FOR {
+    background-color: rgb(0, 0, 0);
+    color: rgb(150, 84, 255);
+    padding: 1.875rem;
+    max-width: 31.25rem;       
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+.formulario_input {
+    padding: 0.5rem;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.contactame {
+    font-size: var(--fs-xl);
+    color: rgb(160, 23, 23);
+    margin-bottom: 1rem;
+}
+
+
+/*PARA QUE SE ADAPTE A LAS DEMAS PANTALLAS*/
+
+
+@media (max-width: 768px) {
+    .image_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 0.3rem 5%;
+    }
+
+    .FOR {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0.75rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .header .nav_links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .header .nav_links li {
+        padding: 0.25rem 0;
+    }
+
+    .image_container {
+        grid-template-columns: 1fr;
+    }
+
+    .image_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .texto1,
+    .title2 {
+        padding: 1rem;
+        font-size: var(--fs-sm);
+    }
+
+    .imag {
+        max-width: 100%;
+    }
+
+    .header .navegar button {
+        padding: 0.5rem 1rem;
+        font-size: var(--fs-sm);
+    }
+
+    .FOR {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
