@@ -1,73 +1,114 @@
-@media (max-width:768px) {
-    .image_container {
-        grid-template-columns: repeat(2, 1fr)
-    }
 
-    .image_container {
-        grid-template-columns: repeat(3, 1fr)
-    }
+@media (max-width: 768px) {
 
+    /* HEADER */
     header {
-        padding: 0.3rem 5%
+        padding: 10px 5%;
     }
 
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* NAV */
+    .nav_links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* IMÁGENES EVENTOS */
+    .image_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 40px;
+    }
+
+    .card img {
+        width: 100%; 
+        height: 180px;
+    }
+
+    /* TEXTO */
+    .text1 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    /* VIDEO */
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* FORM */
     .FOR {
-        max-width: 90%
+        max-width: 90%;
     }
 }
 
-@media (max-width:480px) {
-    header {
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .menu {
         flex-direction: column;
-        height: auto;
-        padding: 0.75rem 1rem;
-        gap: 0.75rem
+        align-items: center;
     }
 
-    .header .nav_links {
+    .logo {
+        position: static; 
+        margin-bottom: 10px;
+    }
+
+    /* NAV */
+    .nav_links {
         flex-direction: column;
-        gap: 0.5rem;
-        align-items: center
+        gap: 10px;
+        text-align: center;
     }
 
-    .header .nav_links li {
-        padding: 0.25rem 0
-    }
-
-    .grid_proyectos {
-        grid-template-columns: 1fr
-    }
-
-    .ima {
-        grid-template-columns: repeat(2, 1fr)
-    }
-
+    /* TÍTULOS */
     h1 {
-        font-size: 1.5rem
+        font-size: 24px;
+        margin: 30px;
     }
 
     h2 {
-        font-size: 1.25rem
+        font-size: 20px;
     }
 
-
-    .texto1,
-    .title2 {
-        padding: 1rem;
-        font-size: var(--fs-sm)
+    /* TEXTO */
+    .text1 {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 15px;
     }
 
-    .imagen {
-        max-width: 100%
+    /* IMÁGENES */
+    .image_container {
+        grid-template-columns: 1fr; 
+        margin: 20px;
     }
 
-    .header .navegar button {
-        padding: 0.5rem 1rem;
-        font-size: var(--fs-sm)
+    .card img {
+        height: 160px;
     }
 
+    /* VIDEO */
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* FORM */
     .FOR {
         max-width: 100%;
-        border-radius: 0
+        padding: 15px;
+    }
+
+    .formulario_input {
+        font-size: 14px;
     }
 }
